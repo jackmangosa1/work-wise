@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-seri;
+}
+
+:root {
+  --themeWhite: #ffffff;
+  --themeBlack: #020202;
+  --themePurple: #824dff;
+  --themeGreen: #00c47a;
+  --themeYellow: #fec128;
+  --themeDarkText: rgb(87, 83, 83);
+  --themeDarkWhiteBackground: #f3f1fd;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  padding: 2rem 2rem;
+}
+
+.page-title {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--themeDarkWhiteBackground);
+  width: 40%;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+label,
+input {
+  display: block;
+}
+label {
+  font-weight: 500;
+}
+
+input {
+  outline: none;
+  padding: 0.8rem;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 0.4rem;
+}
+.button {
+  outline: none;
+  margin-top: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  background: var(--themeYellow);
+  font-weight: 500;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+.sign-up-link {
+  font-size: 0.9rem;
+  text-align: center;
+}
+.sign-up-link:hover {
+  cursor: pointer;
+}
+.error-message {
+  color: red;
+}
+
+@media screen and (max-width: 1070px) {
+  .login-form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login-form {
+    width: 100%;
+  }
+}
