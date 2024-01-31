@@ -41,7 +41,6 @@
   margin: 2rem auto;
   border-radius: 0.5rem;
 }
-
 .input-field {
   display: flex;
   flex-direction: column;
@@ -52,6 +51,7 @@ input {
   display: block;
 }
 label {
+  color: var(--themeDarkText);
   font-weight: 500;
 }
 

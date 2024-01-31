@@ -52,6 +52,7 @@ input {
   display: block;
 }
 label {
+  color: var(--themeDarkText);
   font-weight: 500;
 }
 
